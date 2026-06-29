@@ -1,0 +1,10 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Local IDE / OS
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini

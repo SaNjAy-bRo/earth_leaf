@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Earthleaf - Luxury Ayurvedic formulations, essential oils, and wellness products crafted with nature's wisdom and modern care.">
+    <title>Earthleaf - Editorial Ayurvedic Wellness & Premium Essential Oils</title>
+    <!-- Google Fonts: Cormorant Garamond (Luxury Serif) & Plus Jakarta Sans (Sleek Geometric Sans-Serif) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="main-header" id="header">
+        <div class="header-container">
+            <a href="#" class="logo-container" id="logo">
+                <img src="logo/Earthleaf.png" alt="Earthleaf Logo" class="logo-img">
+            </a>
+            <nav class="main-nav" id="nav-menu">
+                <a href="#about" class="nav-link">About Us</a>
+                <a href="#quiz" class="nav-link">Oil Finder</a>
+                <a href="#catalog" class="nav-link">The Collection</a>
+                <a href="#partnership" class="nav-link">Partnerships</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            <div class="header-cta">
+                <a href="#catalog" class="btn btn-secondary">Explore Collection</a>
+            </div>
+            <!-- Mobile Phone Link -->
+            <a href="tel:+919293164251" class="mobile-phone-link" aria-label="Call Us">
+                <svg class="mobile-phone-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section - Sleek & High Contrast Editorial -->
+        <section class="hero-section" id="home">
+            <div class="hero-bg-overlay"></div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <h2 class="hero-subtitle">Developed by Sadguru Kripa Laboratories</h2>
+                    <h1 class="hero-title">Nature's Wisdom. <br><span class="accent-text">Modern Care.</span></h1>
+                    <div class="hero-accent-bar"></div>
+                    <p class="hero-desc">
+                        A luxury Ayurvedic wellness brand dedicated to bringing the timeless, healing benefits of pure herbal extracts into your daily self-care rituals. Experience clinical purity, elevated by nature.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#catalog" class="btn btn-primary">View Collection</a>
+                        <a href="#quiz" class="btn btn-outline">Find Your Oil</a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <div class="hero-illustration">
+                        <img src="hero_bottles.png" alt="Earthleaf Olive Oil" class="hero-product-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Refined Certifications Bar (Thin Sleek SVG Icons) -->
+        <section class="certifications-bar">
+            <div class="container certs-container">
+                <div class="cert-item" id="cert-gmp">
+                    <svg class="cert-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"/>
+                        <path d="M12 8v8"/>
+                        <path d="M8 12h8"/>
+                    </svg>
+                    <span class="cert-title">GMP Certified</span>
+                </div>
+                <div class="cert-item" id="cert-iso">
+                    <svg class="cert-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="3" width="18" height="18" rx="2"/>
+                        <path d="m9 12 2 2 4-4"/>
+                    </svg>
+                    <span class="cert-title">ISO 9001:2015</span>
+                </div>
+                <div class="cert-item" id="cert-ayush">
+                    <svg class="cert-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 2c5 5 5 9 0 14-5-5-5-9 0-14z"/>
+                        <path d="M12 14v6"/>
+                    </svg>
+                    <span class="cert-title">AYUSH Approved</span>
+                </div>
+
+                <div class="cert-item" id="cert-vegan">
+                    <svg class="cert-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="m2 22 1-1c3-3 7-5 11-5s8 2 11 5l1 1"/>
+                        <path d="M12 16V10"/>
+                        <path d="M12 10a4 4 0 0 1 4-4"/>
+                        <path d="M12 10a4 4 0 0 0-4-4"/>
+                    </svg>
+                    <span class="cert-title">100% Vegan</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us (Sleek Diagonal Cut Section, Clean Solids) -->
+        <section class="about-section angled-divider-down" id="about">
+            <div class="container about-container">
+                <div class="about-content fade-in-section">
+                    <h3 class="section-tag">Our Roots</h3>
+                    <h2 class="section-title">Nature's Wisdom, <br>Modern Care</h2>
+                    <p class="section-desc">
+                        Developed by **Sadguru Kripa Ayurvedic Laboratories Pvt. Ltd.**, Earthleaf blends generations of traditional Ayurvedic wisdom with state-of-the-art scientific extraction and quality standards. We create products that respect nature's intelligence while delivering visible, modern results.
+                    </p>
+                    <div class="commitment-box glass-box">
+                        <h4>Our Purity Pledge</h4>
+                        <p>We are dedicated to delivering products that reflect the perfect balance between traditional Ayurvedic wisdom and modern scientific excellence. Every batch undergoes rigorous quality checks to ensure safety, purity, and standard-setting efficacy.</p>
+                    </div>
+                </div>
+                <div class="why-choose-cards fade-in-section">
+                    <h3 class="section-tag-right">Why Choose Earthleaf?</h3>
+                    <div class="why-grid">
+                        <div class="why-card">
+                            <span class="why-card-num">01</span>
+                            <h5>Authentic Formulations</h5>
+                            <p>Crafted based on classic Ayurvedic texts with meticulous detail.</p>
+                        </div>
+                        <div class="why-card">
+                            <span class="why-card-num">02</span>
+                            <h5>Premium Herbal Extracts</h5>
+                            <p>Sourced from high-quality, pure organic ingredients.</p>
+                        </div>
+                        <div class="why-card">
+                            <span class="why-card-num">03</span>
+                            <h5>Scientifically Developed</h5>
+                            <p>Quality tested and clinically evaluated for safety.</p>
+                        </div>
+                        <div class="why-card">
+                            <span class="why-card-num">04</span>
+                            <h5>Certified Facilities</h5>
+                            <p>Manufactured in state-of-the-art GMP & ISO certified labs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Brand Spotlight / Editorial Advertisement Section -->
+        <section class="spotlight-section">
+            <div class="container spotlight-container">
+                <div class="spotlight-visual fade-in-section">
+                    <div class="visual-border-box">
+                        <img src="spotlight_ingredients.png" alt="Core Ayurvedic Ingredients" class="spotlight-image">
+                    </div>
+                </div>
+                <div class="spotlight-content fade-in-section">
+                    <span class="cta-mini-title">The Purity Standard</span>
+                    <h2>Cold Pressed. Purely Extracted.</h2>
+                    <p class="spotlight-lead">Every drop contains active botanical compounds extracted without heat, keeping nature's therapeutic structure fully intact.</p>
+                    <p class="spotlight-text">Our cold-pressed oils bypass high-temperature refining to preserve Vitamin E, essential fatty acids, and antioxidants. From seed to bottle, we protect the structural integrity of every herb to deliver raw, concentrated wellness directly to your home.</p>
+                    <a href="#catalog" class="btn btn-secondary">Discover Pure Oils</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Self-Care Quiz Section (Sleek Geometric Cut Section) -->
+        <section class="quiz-section angled-divider-up" id="quiz">
+            <div class="container">
+                <div class="quiz-header fade-in-section">
+                    <h3 class="section-tag-center">Self-Care Diagnostic</h3>
+                    <h2 class="section-title-center">Find Your Perfect Herbal Oil</h2>
+                    <p class="section-desc-center">Take our quick diagnostic quiz to find the Earthleaf oil tailored to your body's specific constitution and needs.</p>
+                </div>
+                <div class="quiz-card glass-box-light fade-in-section" id="quiz-widget">
+                    <div class="quiz-progress-bar">
+                        <div class="progress-fill" id="quiz-progress" style="width: 25%;"></div>
+                    </div>
+                    <!-- Step 1 -->
+                    <div class="quiz-step active" id="step-1">
+                        <h4 class="quiz-question">What is your primary wellness focus?</h4>
+                        <div class="quiz-options">
+                            <button class="quiz-opt-btn" data-choice="hair" onclick="nextQuizStep('hair', 1)">
+                                <svg class="opt-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 22c5.5-5 5.5-11 0-16-5.5 5-5.5 11 0 16z"/>
+                                    <path d="M12 6v16M12 11c1.5-1.5 3-1 3-1M12 15c-1.5-1.5-3-1-3-1"/>
+                                </svg>
+                                <span class="opt-text">Hair & Scalp Health</span>
+                            </button>
+                            <button class="quiz-opt-btn" data-choice="body" onclick="nextQuizStep('body', 1)">
+                                <svg class="opt-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                    <path d="m9 11 2 2 4-4"/>
+                                </svg>
+                                <span class="opt-text">Muscle & Joint Relief</span>
+                            </button>
+                            <button class="quiz-opt-btn" data-choice="skin" onclick="nextQuizStep('skin', 1)">
+                                <svg class="opt-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 22a7 7 0 0 0 7-7c0-4.3-7-11-7-11S5 10.7 5 15a7 7 0 0 0 7 7z"/>
+                                    <path d="m17 4 1 1-1 1-1-1zM7 7l1 1-1 1-1-1z"/>
+                                </svg>
+                                <span class="opt-text">Skin Hydration & Glow</span>
+                            </button>
+                            <button class="quiz-opt-btn" data-choice="respiratory" onclick="nextQuizStep('respiratory', 1)">
+                                <svg class="opt-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 2C10 5 7 7 7 10c0 3 2.5 5 5 5s5-2 5-5c0-3-3-5-5-8z"/>
+                                    <path d="M12 10c1.5 1.5 3.5 1.5 5 0-1.5-1.5-3.5-1.5-5 0zm0 0c-1.5 1.5-3.5 1.5-5 0 1.5-1.5 3.5-1.5 5 0z"/>
+                                </svg>
+                                <span class="opt-text">Respiratory & Stress Relief</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Step 2 (Conditional: Hair Focus) -->
+                    <div class="quiz-step" id="step-2-hair">
+                        <h4 class="quiz-question">What is your biggest hair concern?</h4>
+                        <div class="quiz-options">
+                            <button class="quiz-opt-btn" data-choice="growth" onclick="finishQuiz('hair-growth')">
+                                <svg class="opt-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 22V10M12 10c3 0 6-2 6-5 0 4-3 5-6 5zm0 0c-3 0-6-2-6-5 0 4 3 5 6 5z"/>
+                                </svg>
+                                <span class="opt-text">Hair thinning & Hair fall</span>
+                            </button>
+                            <button class="quiz-opt-btn" data-choice="dandruff" onclick="finishQuiz('hair-dandruff')">
+                                <svg class="opt-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <circle cx="12" cy="8" r="1" fill="currentColor"/>
+                                    <circle cx="8" cy="12" r="1" fill="currentColor"/>
+                                    <circle cx="16" cy="12" r="1" fill="currentColor"/>
+                                    <circle cx="12" cy="16" r="1" fill="currentColor"/>
+                                </svg>
+                                <span class="opt-text">Dry scalp, flakiness & dandruff</span>
+                            </button>
+                            <button class="quiz-opt-btn" data-choice="damage" onclick="finishQuiz('hair-damage')">
+                                <svg class="opt-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M19 11h-6V3L5 13h6v8l8-10z"/>
+                                </svg>
+                                <span class="opt-text">Dryness, split ends & damage repair</span>
+                            </button>
+                            <button class="quiz-opt-btn" data-choice="density" onclick="finishQuiz('hair-density')">
+                                <svg class="opt-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                </svg>
+                                <span class="opt-text">Density, graying & scalp irritation</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Step 2 (Conditional: Body Focus) -->
+                    <div class="quiz-step" id="step-2-body">
+                        <h4 class="quiz-question">Where do you experience discomfort?</h4>
+                        <div class="quiz-options">
+                            <button class="quiz-opt-btn" data-choice="muscle" onclick="finishQuiz('body-muscle')">
+                                <svg class="opt-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="2" y="9" width="4" height="6" rx="1"/>
+                                    <rect x="18" y="9" width="4" height="6" rx="1"/>
+                                    <path d="M6 12h12M4 7v10M20 7v10"/>
+                                </svg>
+                                <span class="opt-text">Muscle soreness & post-workout stiffness</span>
+                            </button>
+                            <button class="quiz-opt-btn" data-choice="joint" onclick="finishQuiz('body-joint')">
+                                <svg class="opt-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="9" y="3" width="6" height="18" rx="3"/>
+                                    <circle cx="9" cy="6" r="2"/>
+                                    <circle cx="15" cy="6" r="2"/>
+                                    <circle cx="9" cy="18" r="2"/>
+                                    <circle cx="15" cy="18" r="2"/>
+                                </svg>
+                                <span class="opt-text">Joint stiffness, back, or shoulder pain</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Step 2 (Conditional: Skin Focus) -->
+                    <div class="quiz-step" id="step-2-skin">
+                        <h4 class="quiz-question">What skin texture do you want to achieve?</h4>
+                        <div class="quiz-options">
+                            <button class="quiz-opt-btn" data-choice="deep" onclick="finishQuiz('skin-olive')">
+                                <svg class="opt-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 22a7 7 0 0 0 7-7c0-4.3-7-11-7-11S5 10.7 5 15a7 7 0 0 0 7 7z"/>
+                                </svg>
+                                <span class="opt-text">Deep hydration & wrinkle reduction</span>
+                            </button>
+                            <button class="quiz-opt-btn" data-choice="glow" onclick="finishQuiz('skin-almond')">
+                                <svg class="opt-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="5"/>
+                                    <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+                                </svg>
+                                <span class="opt-text">Bright tone, fading dark circles & light feel</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Step 2 (Conditional: Respiratory/Stress Focus) -->
+                    <div class="quiz-step" id="step-2-respiratory">
+                        <h4 class="quiz-question">How do you prefer to utilize essential oils?</h4>
+                        <div class="quiz-options">
+                            <button class="quiz-opt-btn" data-choice="inhale" onclick="finishQuiz('respiratory-eucalyptus')">
+                                <svg class="opt-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
+                                    <path d="M12 14c-1.5-1.5-1.5-3.5 0-5 1.5 1.5 1.5 3.5 0 5z"/>
+                                </svg>
+                                <span class="opt-text">Steam inhalation & congestion relief</span>
+                            </button>
+                            <button class="quiz-opt-btn" data-choice="diffuse" onclick="finishQuiz('respiratory-eucalyptus')">
+                                <svg class="opt-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18z"/>
+                                    <path d="M9 12h6M12 9v6"/>
+                                </svg>
+                                <span class="opt-text">Diffusing for stress relief & aromatherapy</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Quiz Result -->
+                    <div class="quiz-step" id="quiz-result">
+                        <div class="result-header">
+                            <span class="result-badge">Your Recommendation</span>
+                            <h4 class="result-product-title" id="recommended-title">Recommended Product</h4>
+                        </div>
+                        <div class="result-body">
+                            <div class="result-img-wrapper" id="recommended-svg-container">
+                                <!-- SVG will be injected here dynamically -->
+                            </div>
+                            <div class="result-details">
+                                <p class="result-desc" id="recommended-desc">Product description goes here.</p>
+                                <div class="result-specs">
+                                    <span class="spec-label">Key Variant:</span>
+                                    <span class="spec-val" id="recommended-variant">Variant details</span>
+                                </div>
+                                <div class="result-actions">
+                                    <button class="btn btn-primary" id="recommended-view-btn" onclick="openRecommendedDetails()">View Details</button>
+                                    <button class="btn btn-outline btn-outline-dark" onclick="restartQuiz()">Retake Quiz</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Catalog Section -->
+        <section class="catalog-section" id="catalog">
+            <div class="container">
+                <div class="catalog-header fade-in-section">
+                    <h3 class="section-tag-center">The Collection</h3>
+                    <h2 class="section-title-center">Our Ayurvedic Formulations</h2>
+                    
+                    <!-- Category Filters -->
+                    <div class="catalog-filters" id="catalog-filters">
+                        <button class="filter-btn active" data-filter="all">All Products</button>
+                        <button class="filter-btn" data-filter="hair">Hair Care</button>
+                        <button class="filter-btn" data-filter="wellness">Wellness & Relief</button>
+                        <button class="filter-btn" data-filter="skin">Pure Skin & Carrier Oils</button>
+                        <button class="filter-btn" data-filter="essential">Essential Oils</button>
+                    </div>
+                </div>
+
+                <!-- Product Grid -->
+                <div class="product-grid" id="product-grid">
+                    
+                    <!-- Product 1: Vasanta Sri Devi Hair Oil -->
+                    <div class="product-card fade-in-section" data-category="hair" id="prod-1">
+                        <div class="product-card-badge">Ayurvedic Hair Care</div>
+                        <div class="product-img-holder">
+                            <svg viewBox="0 0 200 240" class="bottle-svg">
+                                <ellipse cx="100" cy="220" rx="60" ry="10" fill="rgba(0, 0, 0, 0.08)"/>
+                                <g transform="translate(65, 30)">
+                                    <rect x="0" y="0" width="70" height="170" rx="18" fill="url(#bottle-glass-grad)" stroke="#122619" stroke-width="1.5"/>
+                                    <rect x="4" y="25" width="62" height="133" rx="10" fill="url(#hair-oil-liquid)" opacity="0.95"/>
+                                    <rect x="22" y="-18" width="26" height="20" rx="4" fill="#122619"/>
+                                    <rect x="8" y="50" width="54" height="80" rx="2" fill="#FAF9F6" stroke="#D4B26F" stroke-width="1"/>
+                                    <!-- Label details -->
+                                    <text x="35" y="65" font-family="'Plus Jakarta Sans', sans-serif" font-size="6" font-weight="800" fill="#122619" text-anchor="middle" letter-spacing="1">earthleaf</text>
+                                    <text x="35" y="82" font-family="'Cormorant Garamond', serif" font-size="8" font-weight="700" fill="#122619" text-anchor="middle">Vasanta Sri</text>
+                                    <text x="35" y="90" font-family="'Cormorant Garamond', serif" font-size="8" font-weight="700" fill="#122619" text-anchor="middle">Devi Hair Oil</text>
+                                    <circle cx="35" cy="110" r="8" fill="none" stroke="#D4B26F" stroke-width="1"/>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="product-card-info">
+                            <h4 class="product-card-title">Vasanta Sri Devi Ayurvedic Hair Oil</h4>
+                            <p class="product-card-variant">With Rosemary & Saw Palmetto</p>
+                            <p class="product-card-desc">Nourishing hair treatment supporting scalp vitality and healthy hair growth.</p>
+                            <div class="product-card-footer">
+                                <span class="product-card-price">From Rs 120</span>
+                                <button class="btn btn-small" onclick="openProductModal(1)">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 2: Vasanta Sri Devi Mandara Tailam -->
+                    <div class="product-card fade-in-section" data-category="hair" id="prod-2">
+                        <div class="product-card-badge">Ayurvedic Hair Care</div>
+                        <div class="product-img-holder">
+                            <svg viewBox="0 0 200 240" class="bottle-svg">
+                                <ellipse cx="100" cy="220" rx="60" ry="10" fill="rgba(0, 0, 0, 0.08)"/>
+                                <g transform="translate(65, 30)">
+                                    <rect x="0" y="0" width="70" height="170" rx="18" fill="url(#bottle-glass-grad)" stroke="#122619" stroke-width="1.5"/>
+                                    <rect x="4" y="25" width="62" height="133" rx="10" fill="url(#mandara-liquid)" opacity="0.95"/>
+                                    <rect x="22" y="-18" width="26" height="20" rx="4" fill="#FAF9F6" stroke="#122619" stroke-width="1.5"/>
+                                    <rect x="8" y="50" width="54" height="80" rx="2" fill="url(#mandara-label-grad)"/>
+                                    <!-- Label details -->
+                                    <text x="35" y="65" font-family="'Plus Jakarta Sans', sans-serif" font-size="6" fill="#FAF9F6" text-anchor="middle" letter-spacing="1">earthleaf</text>
+                                    <text x="35" y="82" font-family="'Cormorant Garamond', serif" font-size="8" font-weight="700" fill="#FAF9F6" text-anchor="middle">MANDARA</text>
+                                    <text x="35" y="92" font-family="'Cormorant Garamond', serif" font-size="8" font-weight="700" fill="#FAF9F6" text-anchor="middle">TAILAM</text>
+                                    <circle cx="35" cy="112" r="8" fill="none" stroke="#D4B26F" stroke-width="1"/>
+                                </g>
+                                <defs>
+                                    <linearGradient id="mandara-liquid" x1="0%" y1="0%" x2="100%" y2="0%">
+                                        <stop offset="0%" stop-color="#3D120C"/>
+                                        <stop offset="50%" stop-color="#5C160B"/>
+                                        <stop offset="100%" stop-color="#240A06"/>
+                                    </linearGradient>
+                                    <linearGradient id="mandara-label-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+                                        <stop offset="0%" stop-color="#122619"/>
+                                        <stop offset="60%" stop-color="#9C2014"/>
+                                        <stop offset="100%" stop-color="#B64820"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="product-card-info">
+                            <h4 class="product-card-title">Vasanta Sri Devi Mandara Tailam</h4>
+                            <p class="product-card-variant">With Onion & Blackseed</p>
+                            <p class="product-card-desc">Traditional herbal oil with Mandara (Hibiscus) to nourish and revitalize damaged hair.</p>
+                            <div class="product-card-footer">
+                                <span class="product-card-price">From Rs 150</span>
+                                <button class="btn btn-small" onclick="openProductModal(2)">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 3: B FIT Muscle Oil -->
+                    <div class="product-card fade-in-section" data-category="wellness" id="prod-3">
+                        <div class="product-card-badge">Therapeutic Relief</div>
+                        <div class="product-img-holder">
+                            <svg viewBox="0 0 200 240" class="bottle-svg">
+                                <ellipse cx="100" cy="220" rx="60" ry="10" fill="rgba(0, 0, 0, 0.08)"/>
+                                <g transform="translate(65, 35)">
+                                    <rect x="0" y="0" width="70" height="160" rx="18" fill="url(#bottle-glass-grad)" stroke="#122619" stroke-width="1.5"/>
+                                    <rect x="4" y="25" width="62" height="123" rx="10" fill="url(#bfit-liquid)" opacity="0.95"/>
+                                    <rect x="22" y="-18" width="26" height="20" rx="4" fill="#122619"/>
+                                    <rect x="8" y="45" width="54" height="80" rx="2" fill="url(#bfit-label-grad)"/>
+                                    <!-- Label details -->
+                                    <text x="35" y="60" font-family="'Plus Jakarta Sans', sans-serif" font-size="6" fill="#FAF9F6" text-anchor="middle" letter-spacing="1">earthleaf</text>
+                                    <text x="35" y="76" font-family="'Cormorant Garamond', serif" font-size="9" font-weight="700" fill="#FAF9F6" text-anchor="middle">B FIT</text>
+                                    <text x="35" y="86" font-family="'Cormorant Garamond', serif" font-size="9" font-weight="700" fill="#FAF9F6" text-anchor="middle">MUSCLE OIL</text>
+                                </g>
+                                <defs>
+                                    <linearGradient id="bfit-liquid" x1="0%" y1="0%" x2="100%" y2="0%">
+                                        <stop offset="0%" stop-color="#4D581C"/>
+                                        <stop offset="50%" stop-color="#6F802A"/>
+                                        <stop offset="100%" stop-color="#363E13"/>
+                                    </linearGradient>
+                                    <linearGradient id="bfit-label-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+                                        <stop offset="0%" stop-color="#122619"/>
+                                        <stop offset="60%" stop-color="#02407A"/>
+                                        <stop offset="100%" stop-color="#026ACD"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="product-card-info">
+                            <h4 class="product-card-title">B FIT Muscle Oil</h4>
+                            <p class="product-card-variant">With Eucalyptus & Menthol</p>
+                            <p class="product-card-desc">Ayurvedic formulation to support muscle recovery, flexibility, and rapid joint pain relief.</p>
+                            <div class="product-card-footer">
+                                <span class="product-card-price">From Rs 85</span>
+                                <button class="btn btn-small" onclick="openProductModal(3)">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 4: River Hills Olive Oil -->
+                    <div class="product-card fade-in-section" data-category="skin" id="prod-4">
+                        <div class="product-card-badge">Cold Pressed Pure</div>
+                        <div class="product-img-holder">
+                            <svg viewBox="0 0 200 240" class="bottle-svg">
+                                <ellipse cx="100" cy="220" rx="60" ry="10" fill="rgba(0, 0, 0, 0.08)"/>
+                                <g transform="translate(65, 30)">
+                                    <rect x="0" y="0" width="70" height="170" rx="18" fill="url(#bottle-glass-grad)" stroke="#122619" stroke-width="1.5"/>
+                                    <rect x="4" y="25" width="62" height="133" rx="10" fill="url(#olive-oil-liquid)" opacity="0.95"/>
+                                    <rect x="22" y="-18" width="26" height="20" rx="4" fill="#FAF9F6" stroke="#122619" stroke-width="1.5"/>
+                                    <rect x="8" y="50" width="54" height="80" rx="2" fill="url(#olive-label-grad)"/>
+                                    <!-- Label details -->
+                                    <text x="35" y="65" font-family="'Plus Jakarta Sans', sans-serif" font-size="6" fill="#FAF9F6" text-anchor="middle" letter-spacing="1">earthleaf</text>
+                                    <text x="35" y="82" font-family="'Cormorant Garamond', serif" font-size="9" font-weight="700" fill="#FAF9F6" text-anchor="middle">OLIVE</text>
+                                    <text x="35" y="92" font-family="'Cormorant Garamond', serif" font-size="9" font-weight="700" fill="#FAF9F6" text-anchor="middle">OIL</text>
+                                </g>
+                                <defs>
+                                    <linearGradient id="olive-label-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+                                        <stop offset="0%" stop-color="#122619"/>
+                                        <stop offset="60%" stop-color="#542E82"/>
+                                        <stop offset="100%" stop-color="#7B54A6"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="product-card-info">
+                            <h4 class="product-card-title">River Hills Olive Oil</h4>
+                            <p class="product-card-variant">With Lavender Extract</p>
+                            <p class="product-card-desc">100% natural, cold-pressed oil rich in antioxidants to deeply moisturize skin and condition hair.</p>
+                            <div class="product-card-footer">
+                                <span class="product-card-price">From Rs 90</span>
+                                <button class="btn btn-small" onclick="openProductModal(4)">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 5: River Hills Eucalyptus Oil -->
+                    <div class="product-card fade-in-section" data-category="essential" id="prod-5">
+                        <div class="product-card-badge">Essential Oil</div>
+                        <div class="product-img-holder">
+                            <svg viewBox="0 0 200 240" class="bottle-svg">
+                                <ellipse cx="100" cy="220" rx="60" ry="10" fill="rgba(0, 0, 0, 0.08)"/>
+                                <g transform="translate(68, 40)">
+                                    <rect x="0" y="0" width="64" height="150" rx="16" fill="url(#bottle-glass-grad)" stroke="#122619" stroke-width="1.5"/>
+                                    <rect x="4" y="20" width="56" height="118" rx="8" fill="url(#eucalyptus-liquid)" opacity="0.95"/>
+                                    <rect x="20" y="-18" width="24" height="20" rx="4" fill="#FAF9F6" stroke="#122619" stroke-width="1.5"/>
+                                    <rect x="8" y="45" width="48" height="70" rx="2" fill="url(#euc-label-grad)"/>
+                                    <!-- Label details -->
+                                    <text x="24" y="60" font-family="'Plus Jakarta Sans', sans-serif" font-size="5" fill="#FAF9F6" text-anchor="middle" letter-spacing="1">earthleaf</text>
+                                    <text x="24" y="74" font-family="'Cormorant Garamond', serif" font-size="7" font-weight="700" fill="#FAF9F6" text-anchor="middle">EUCALYPTUS</text>
+                                    <text x="24" y="82" font-family="'Cormorant Garamond', serif" font-size="7" font-weight="700" fill="#FAF9F6" text-anchor="middle">OIL</text>
+                                </g>
+                                <defs>
+                                    <linearGradient id="euc-label-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+                                        <stop offset="0%" stop-color="#122619"/>
+                                        <stop offset="60%" stop-color="#026ACD"/>
+                                        <stop offset="100%" stop-color="#038880"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="product-card-info">
+                            <h4 class="product-card-title">River Hills Eucalyptus Oil</h4>
+                            <p class="product-card-variant">100% Pure & Natural</p>
+                            <p class="product-card-desc">Essential oil known for clearing nasal passages, soothing muscle pain, and aromatherapy.</p>
+                            <div class="product-card-footer">
+                                <span class="product-card-price">From Rs 80</span>
+                                <button class="btn btn-small" onclick="openProductModal(5)">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 6: River Hills Almond Oil -->
+                    <div class="product-card fade-in-section" data-category="skin" id="prod-6">
+                        <div class="product-card-badge">Cold Pressed Pure</div>
+                        <div class="product-img-holder">
+                            <svg viewBox="0 0 200 240" class="bottle-svg">
+                                <ellipse cx="100" cy="220" rx="60" ry="10" fill="rgba(0, 0, 0, 0.08)"/>
+                                <g transform="translate(65, 30)">
+                                    <rect x="0" y="0" width="70" height="170" rx="18" fill="url(#bottle-glass-grad)" stroke="#122619" stroke-width="1.5"/>
+                                    <rect x="4" y="25" width="62" height="133" rx="10" fill="url(#almond-liquid)" opacity="0.95"/>
+                                    <rect x="22" y="-18" width="26" height="20" rx="4" fill="#FAF9F6" stroke="#122619" stroke-width="1.5"/>
+                                    <rect x="8" y="50" width="54" height="80" rx="2" fill="url(#almond-label-grad)"/>
+                                    <!-- Label details -->
+                                    <text x="35" y="65" font-family="'Plus Jakarta Sans', sans-serif" font-size="6" fill="#FAF9F6" text-anchor="middle" letter-spacing="1">earthleaf</text>
+                                    <text x="35" y="82" font-family="'Cormorant Garamond', serif" font-size="9" font-weight="700" fill="#FAF9F6" text-anchor="middle">ALMOND</text>
+                                    <text x="35" y="92" font-family="'Cormorant Garamond', serif" font-size="9" font-weight="700" fill="#FAF9F6" text-anchor="middle">OIL</text>
+                                </g>
+                                <defs>
+                                    <linearGradient id="almond-liquid" x1="0%" y1="0%" x2="100%" y2="0%">
+                                        <stop offset="0%" stop-color="#EAA63D"/>
+                                        <stop offset="50%" stop-color="#FFCE7A"/>
+                                        <stop offset="100%" stop-color="#C58523"/>
+                                    </linearGradient>
+                                    <linearGradient id="almond-label-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+                                        <stop offset="0%" stop-color="#122619"/>
+                                        <stop offset="60%" stop-color="#5E3F25"/>
+                                        <stop offset="100%" stop-color="#A58248"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="product-card-info">
+                            <h4 class="product-card-title">River Hills Almond Oil</h4>
+                            <p class="product-card-variant">With Tea Tree Extract</p>
+                            <p class="product-card-desc">Sweet Almond Oil packed with Vitamin E to deeply moisturize skin and improve dark circles.</p>
+                            <div class="product-card-footer">
+                                <span class="product-card-price">From Rs 80</span>
+                                <button class="btn btn-small" onclick="openProductModal(6)">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 7: Bhringraj Amla Ayurvedic Hair Oil -->
+                    <div class="product-card fade-in-section" data-category="hair" id="prod-7">
+                        <div class="product-card-badge">Ayurvedic Hair Care</div>
+                        <div class="product-img-holder">
+                            <svg viewBox="0 0 200 240" class="bottle-svg">
+                                <ellipse cx="100" cy="220" rx="60" ry="10" fill="rgba(0, 0, 0, 0.08)"/>
+                                <g transform="translate(65, 30)">
+                                    <rect x="0" y="0" width="70" height="170" rx="18" fill="url(#bottle-glass-grad)" stroke="#122619" stroke-width="1.5"/>
+                                    <rect x="4" y="25" width="62" height="133" rx="10" fill="url(#bhringraj-liquid)" opacity="0.95"/>
+                                    <rect x="22" y="-18" width="26" height="20" rx="4" fill="#122619"/>
+                                    <rect x="8" y="50" width="54" height="80" rx="2" fill="#FAF9F6" stroke="#122619" stroke-width="1.5"/>
+                                    <!-- Label details -->
+                                    <text x="35" y="65" font-family="'Plus Jakarta Sans', sans-serif" font-size="6" font-weight="800" fill="#122619" text-anchor="middle" letter-spacing="1">earthleaf</text>
+                                    <text x="35" y="82" font-family="'Cormorant Garamond', serif" font-size="8" font-weight="700" fill="#122619" text-anchor="middle">BHRINGRAJ</text>
+                                    <text x="35" y="90" font-family="'Cormorant Garamond', serif" font-size="8" font-weight="700" fill="#122619" text-anchor="middle">& AMLA</text>
+                                    <circle cx="35" cy="110" r="8" fill="none" stroke="#2E5A36" stroke-width="1"/>
+                                </g>
+                                <defs>
+                                    <linearGradient id="bhringraj-liquid" x1="0%" y1="0%" x2="100%" y2="0%">
+                                        <stop offset="0%" stop-color="#1B3F25"/>
+                                        <stop offset="50%" stop-color="#2D603A"/>
+                                        <stop offset="100%" stop-color="#122A19"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="product-card-info">
+                            <h4 class="product-card-title">Bhringraj Amla Ayurvedic Hair Oil</h4>
+                            <p class="product-card-variant">With Sage & Bergamot</p>
+                            <p class="product-card-desc">Traditional formula to nourish roots, reduce hair fall, darken hair, and support scalp health.</p>
+                            <div class="product-card-footer">
+                                <span class="product-card-price">From Rs 150</span>
+                                <button class="btn btn-small" onclick="openProductModal(7)">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Details Modal (Dynamic Overlay) -->
+        <dialog class="product-modal" id="details-modal">
+            <div class="modal-wrapper">
+                <button class="modal-close-btn" id="modal-close" aria-label="Close Modal">&times;</button>
+                <div class="modal-grid">
+                    <div class="modal-visual" id="modal-visual-container">
+                        <!-- SVG graphic will be loaded dynamically -->
+                    </div>
+                    <div class="modal-content">
+                        <span class="modal-badge" id="modal-badge-cat">Hair Care</span>
+                        <h3 class="modal-title" id="modal-product-title">Product Title</h3>
+                        <p class="modal-subtitle" id="modal-product-subtitle">Variant Details</p>
+                        
+                        <div class="modal-tabs">
+                            <button class="tab-btn active" id="btn-tab-desc" onclick="switchModalTab('desc')">Description</button>
+                            <button class="tab-btn" id="btn-tab-benefits" onclick="switchModalTab('benefits')">Benefits</button>
+                            <button class="tab-btn" id="btn-tab-usage" onclick="switchModalTab('usage')">How to Use</button>
+                        </div>
+                        
+                        <div class="tab-content active" id="tab-desc">
+                            <p id="modal-desc">Description text.</p>
+                        </div>
+                        
+                        <div class="tab-content" id="tab-benefits">
+                            <ul class="benefits-list" id="modal-benefits-list">
+                                <!-- Benefits list items -->
+                            </ul>
+                        </div>
+                        
+                        <div class="tab-content" id="tab-usage">
+                            <ol class="usage-steps" id="modal-usage-steps">
+                                <!-- Steps list items -->
+                            </ol>
+                        </div>
+                        
+                        <div class="modal-pricing-box">
+                            <span class="pricing-label">Available Packaging Sizes & Price (MRP):</span>
+                            <div class="sizes-container" id="modal-sizes-container">
+                                <!-- Dynamic sizes buttons -->
+                            </div>
+                        </div>
+                        
+                        <div class="modal-actions">
+                            <a href="#" class="btn btn-primary btn-icon" id="whatsapp-order-btn" target="_blank">
+                                <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.458 5.704 1.459h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                                </svg>
+                                Order via WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </dialog>
+
+        <!-- Business Partnership Program (Editorial Angled Divider) -->
+        <section class="partnership-section angled-divider-down" id="partnership">
+            <div class="container partnership-container">
+                <div class="partnership-content fade-in-section">
+                    <h3 class="section-tag">Growing Together</h3>
+                    <h2 class="section-title">Distributors & Retail Partners</h2>
+                    <p class="section-desc">
+                        Earthleaf is rapidly expanding its commercial network of dedicated distributors, dealers, retail stores, and wellness centers across India. We offer:
+                    </p>
+                    <ul class="partnership-perks">
+                        <li>
+                            <span class="perk-icon">✓</span>
+                            <strong>Highly Attractive Margins:</strong> Robust commercial structures to support healthy business growth.
+                        </li>
+                        <li>
+                            <span class="perk-icon">✓</span>
+                            <strong>Reliable Supply Chain:</strong> Assured batch availability and rapid shipping directly from our certified facilities.
+                        </li>
+                        <li>
+                            <span class="perk-icon">✓</span>
+                            <strong>Marketing & POS Material:</strong> Access to product brochures, display banners, and detailed training resources.
+                        </li>
+                    </ul>
+                </div>
+                <div class="partnership-visual fade-in-section">
+                    <div class="inquiry-teaser glass-box">
+                        <h5>Interested in Partnering?</h5>
+                        <p>We are seeking partners committed to carrying premium, authentic wellness standards. Fill out the business inquiry form below, and our commercial team will contact you within 24 hours.</p>
+                        <a href="#contact" class="btn btn-secondary btn-full" onclick="setInquiryType('distribution')">Apply for Partnership</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section & Form -->
+        <section class="contact-section" id="contact">
+            <div class="container contact-container">
+                <div class="contact-info fade-in-section">
+                    <h3 class="section-tag">Get in Touch</h3>
+                    <h2 class="section-title">We'd Love to <br>Hear From You</h2>
+                    <p class="contact-desc">
+                        Whether you are a consumer with a product question or a business looking to partner, our customer relations and commercial teams are here to help.
+                    </p>
+                    
+                    <div class="contact-details-list">
+                        <div class="contact-detail-item">
+                            <span class="detail-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            </span>
+                            <div class="detail-text">
+                                <h6>Phone & Support</h6>
+                                <p><a href="tel:+919293164251">+91 9293164251</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-detail-item">
+                            <span class="detail-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            </span>
+                            <div class="detail-text">
+                                <h6>Email Address</h6>
+                                <p><a href="mailto:info@earthleaf.in">info@earthleaf.in</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-detail-item">
+                            <span class="detail-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            </span>
+                            <div class="detail-text">
+                                <h6>Manufacturing Lab</h6>
+                                <p>Sadguru Kripa Ayurvedic Laboratories Pvt. Ltd.<br>India</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-wrapper fade-in-section">
+                    <form class="contact-form" id="inquiry-form" onsubmit="handleFormSubmit(event)">
+                        <div class="form-group">
+                            <label for="form-name">Your Full Name <span class="required">*</span></label>
+                            <input type="text" id="form-name" required placeholder="John Doe">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="form-email">Email Address <span class="required">*</span></label>
+                                <input type="email" id="form-email" required placeholder="john@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="form-phone">Phone Number <span class="required">*</span></label>
+                                <input type="tel" id="form-phone" required placeholder="+91 9876543210">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-subject">Inquiry Type <span class="required">*</span></label>
+                            <select id="form-subject" required>
+                                <option value="general">General Inquiry</option>
+                                <option value="retail">Retail Purchase</option>
+                                <option value="distribution">Distribution / Dealership</option>
+                                <option value="feedback">Product Feedback</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-message">Your Message <span class="required">*</span></label>
+                            <textarea id="form-message" required placeholder="Tell us how we can help you..." rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full" id="submit-btn">Send Message</button>
+                        <div class="form-status" id="form-status-message"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#" class="footer-logo">
+                    <img src="logo/Earthleaf_light.png" alt="Earthleaf Logo" class="logo-img-light">
+                </a>
+                <p class="footer-tagline">Blending the wisdom of classic Ayurveda with modern care for a healthier, more balanced life.</p>
+            </div>
+            
+
+        </div>
+        <div class="footer-bottom">
+            <div class="container footer-bottom-container">
+                <p>&copy; 2026 Earthleaf. Developed by Sadguru Kripa Ayurvedic Laboratories Pvt. Ltd. All rights reserved.</p>
+                <a href="#home" class="back-to-top" id="back-to-top-btn" aria-label="Back to Top">↑</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Pulsating WhatsApp Floating Button -->
+    <a href="https://wa.me/919293164251?text=Hello%20Earthleaf!%20I%20am%20interested%20in%20inquiring%20about%20your%20Ayurvedic%20products." class="whatsapp-float-btn" target="_blank" aria-label="Chat on WhatsApp">
+        <svg class="whatsapp-float-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.458 5.704 1.459h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+    </a>
+
+    <!-- Script File -->
+    <script src="script.js"></script>
+</body>
+</html>

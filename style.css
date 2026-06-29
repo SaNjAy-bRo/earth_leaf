@@ -1688,6 +1688,15 @@ section {
         max-width: 200px;
         margin: 0 auto;
     }
+    .result-actions {
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+    }
+    .result-actions button {
+        width: 100%;
+    }
+
     .modal-grid {
         grid-template-columns: 1fr;
         gap: 30px;

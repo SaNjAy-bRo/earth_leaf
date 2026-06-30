@@ -169,23 +169,25 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
 }
 
-/* Header Navigation (Sleek Editorial Header) */
+/* Header Navigation (Sleek Editorial Header - Transparent by Default) */
 .main-header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
-    background-color: rgba(250, 249, 246, 0.85);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border-bottom: 1px solid var(--border-color);
+    background-color: transparent; /* Transparent on initial page load */
+    border-bottom: 1px solid transparent; /* No visible border on load */
     transition: var(--transition-smooth);
-    padding: 20px 0;
+    padding: 24px 0;
 }
 
 .main-header.scrolled {
     padding: 12px 0;
+    background-color: rgba(250, 249, 246, 0.95); /* Semi-transparent bone white on scroll */
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border-color);
     box-shadow: var(--shadow-sm);
 }
 
@@ -211,6 +213,20 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
 }
 
+/* Logo Swap Logic */
+.main-header .light-logo {
+    display: block;
+}
+.main-header .dark-logo {
+    display: none;
+}
+.main-header.scrolled .light-logo {
+    display: none;
+}
+.main-header.scrolled .dark-logo {
+    display: block;
+}
+
 .logo-img-light {
     height: 36px;
     width: auto;
@@ -229,9 +245,14 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: var(--charcoal-text);
+    color: var(--bone-white); /* White initially to contrast with dark hero */
     position: relative;
     padding: 6px 0;
+    transition: var(--transition-smooth);
+}
+
+.main-header.scrolled .nav-link {
+    color: var(--charcoal-text); /* Charcoal color on scroll */
 }
 
 .nav-link::after {
@@ -2193,11 +2214,14 @@ section {
         justify-content: center;
         width: 40px;
         height: 40px;
-        color: var(--forest-green);
+        color: var(--bone-white);
         transition: var(--transition-smooth);
     }
     .mobile-phone-link:hover {
         color: var(--gold);
+    }
+    .main-header.scrolled .mobile-phone-link {
+        color: var(--forest-green);
     }
     .mobile-phone-icon {
         width: 20px;

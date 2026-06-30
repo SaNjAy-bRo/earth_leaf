@@ -2206,8 +2206,20 @@ section {
     .section-title, .section-title-center {
         font-size: 2.4rem;
     }
+    .hero-section {
+        padding: 120px 0 60px 0; /* Add specific padding to prevent header overlap and button cutoff */
+    }
+    .hero-subtitle {
+        font-size: 0.75rem;
+        letter-spacing: 2.5px;
+        margin-bottom: 16px;
+    }
     .hero-title {
-        font-size: 3.2rem;
+        font-size: 2.2rem; /* Reduced to ensure clean 2-line wrapping on mobile */
+        line-height: 1.25;
+    }
+    .hero-accent-bar {
+        margin: 20px auto 25px auto; /* Centered layout element */
     }
     .hero-image-wrapper {
         display: none;

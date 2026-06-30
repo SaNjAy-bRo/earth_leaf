@@ -19,7 +19,7 @@
     
     /* Typography */
     --font-heading: 'Playfair Display', Georgia, serif;
-    --font-body: 'Playfair Display', Georgia, serif;
+    --font-body: 'Montserrat', sans-serif;
     
     /* Shadows */
     --shadow-sm: 0 4px 10px rgba(18, 38, 25, 0.02);

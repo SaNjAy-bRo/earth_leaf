@@ -22,7 +22,6 @@
             </a>
             <nav class="main-nav" id="nav-menu">
                 <a href="#about" class="nav-link">About Us</a>
-                <a href="#quiz" class="nav-link">Oil Finder</a>
                 <a href="#catalog" class="nav-link">The Collection</a>
                 <a href="#partnership" class="nav-link">Partnerships</a>
                 <a href="#contact" class="nav-link">Contact</a>
@@ -53,7 +52,6 @@
                     </p>
                     <div class="hero-actions">
                         <a href="#catalog" class="btn btn-primary">View Collection</a>
-                        <a href="#quiz" class="btn btn-outline">Find Your Oil</a>
                     </div>
                 </div>
                 <div class="hero-image-wrapper">
@@ -183,175 +181,7 @@
             </div>
         </section>
 
-        <!-- Interactive Self-Care Quiz Section (Sleek Geometric Cut Section) -->
-        <section class="quiz-section angled-divider-up" id="quiz">
-            <div class="container">
-                <div class="quiz-header fade-in-section">
-                    <h3 class="section-tag-center">Self-Care Diagnostic</h3>
-                    <h2 class="section-title-center">Find Your Perfect Herbal Oil</h2>
-                    <p class="section-desc-center">Take our quick diagnostic quiz to find the Earthleaf oil tailored to your body's specific constitution and needs.</p>
-                </div>
-                <div class="quiz-card glass-box-light fade-in-section" id="quiz-widget">
-                    <div class="quiz-progress-bar">
-                        <div class="progress-fill" id="quiz-progress" style="width: 25%;"></div>
-                    </div>
-                    <!-- Step 1 -->
-                    <div class="quiz-step active" id="step-1">
-                        <h4 class="quiz-question">What is your primary wellness focus?</h4>
-                        <div class="quiz-options">
-                            <button class="quiz-opt-btn" data-choice="hair" onclick="nextQuizStep('hair', 1)">
-                                <svg class="opt-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M12 22c5.5-5 5.5-11 0-16-5.5 5-5.5 11 0 16z"/>
-                                    <path d="M12 6v16M12 11c1.5-1.5 3-1 3-1M12 15c-1.5-1.5-3-1-3-1"/>
-                                </svg>
-                                <span class="opt-text">Hair & Scalp Health</span>
-                            </button>
-                            <button class="quiz-opt-btn" data-choice="body" onclick="nextQuizStep('body', 1)">
-                                <svg class="opt-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                                    <path d="m9 11 2 2 4-4"/>
-                                </svg>
-                                <span class="opt-text">Muscle & Joint Relief</span>
-                            </button>
-                            <button class="quiz-opt-btn" data-choice="skin" onclick="nextQuizStep('skin', 1)">
-                                <svg class="opt-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M12 22a7 7 0 0 0 7-7c0-4.3-7-11-7-11S5 10.7 5 15a7 7 0 0 0 7 7z"/>
-                                    <path d="m17 4 1 1-1 1-1-1zM7 7l1 1-1 1-1-1z"/>
-                                </svg>
-                                <span class="opt-text">Skin Hydration & Glow</span>
-                            </button>
-                            <button class="quiz-opt-btn" data-choice="respiratory" onclick="nextQuizStep('respiratory', 1)">
-                                <svg class="opt-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M12 2C10 5 7 7 7 10c0 3 2.5 5 5 5s5-2 5-5c0-3-3-5-5-8z"/>
-                                    <path d="M12 10c1.5 1.5 3.5 1.5 5 0-1.5-1.5-3.5-1.5-5 0zm0 0c-1.5 1.5-3.5 1.5-5 0 1.5-1.5 3.5-1.5 5 0z"/>
-                                </svg>
-                                <span class="opt-text">Respiratory & Stress Relief</span>
-                            </button>
-                        </div>
-                    </div>
-                    <!-- Step 2 (Conditional: Hair Focus) -->
-                    <div class="quiz-step" id="step-2-hair">
-                        <h4 class="quiz-question">What is your biggest hair concern?</h4>
-                        <div class="quiz-options">
-                            <button class="quiz-opt-btn" data-choice="growth" onclick="finishQuiz('hair-growth')">
-                                <svg class="opt-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M12 22V10M12 10c3 0 6-2 6-5 0 4-3 5-6 5zm0 0c-3 0-6-2-6-5 0 4 3 5 6 5z"/>
-                                </svg>
-                                <span class="opt-text">Hair thinning & Hair fall</span>
-                            </button>
-                            <button class="quiz-opt-btn" data-choice="dandruff" onclick="finishQuiz('hair-dandruff')">
-                                <svg class="opt-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                    <circle cx="12" cy="12" r="10"/>
-                                    <circle cx="12" cy="8" r="1" fill="currentColor"/>
-                                    <circle cx="8" cy="12" r="1" fill="currentColor"/>
-                                    <circle cx="16" cy="12" r="1" fill="currentColor"/>
-                                    <circle cx="12" cy="16" r="1" fill="currentColor"/>
-                                </svg>
-                                <span class="opt-text">Dry scalp, flakiness & dandruff</span>
-                            </button>
-                            <button class="quiz-opt-btn" data-choice="damage" onclick="finishQuiz('hair-damage')">
-                                <svg class="opt-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M19 11h-6V3L5 13h6v8l8-10z"/>
-                                </svg>
-                                <span class="opt-text">Dryness, split ends & damage repair</span>
-                            </button>
-                            <button class="quiz-opt-btn" data-choice="density" onclick="finishQuiz('hair-density')">
-                                <svg class="opt-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                                </svg>
-                                <span class="opt-text">Density, graying & scalp irritation</span>
-                            </button>
-                        </div>
-                    </div>
-                    <!-- Step 2 (Conditional: Body Focus) -->
-                    <div class="quiz-step" id="step-2-body">
-                        <h4 class="quiz-question">Where do you experience discomfort?</h4>
-                        <div class="quiz-options">
-                            <button class="quiz-opt-btn" data-choice="muscle" onclick="finishQuiz('body-muscle')">
-                                <svg class="opt-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                    <rect x="2" y="9" width="4" height="6" rx="1"/>
-                                    <rect x="18" y="9" width="4" height="6" rx="1"/>
-                                    <path d="M6 12h12M4 7v10M20 7v10"/>
-                                </svg>
-                                <span class="opt-text">Muscle soreness & post-workout stiffness</span>
-                            </button>
-                            <button class="quiz-opt-btn" data-choice="joint" onclick="finishQuiz('body-joint')">
-                                <svg class="opt-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                    <rect x="9" y="3" width="6" height="18" rx="3"/>
-                                    <circle cx="9" cy="6" r="2"/>
-                                    <circle cx="15" cy="6" r="2"/>
-                                    <circle cx="9" cy="18" r="2"/>
-                                    <circle cx="15" cy="18" r="2"/>
-                                </svg>
-                                <span class="opt-text">Joint stiffness, back, or shoulder pain</span>
-                            </button>
-                        </div>
-                    </div>
-                    <!-- Step 2 (Conditional: Skin Focus) -->
-                    <div class="quiz-step" id="step-2-skin">
-                        <h4 class="quiz-question">What skin texture do you want to achieve?</h4>
-                        <div class="quiz-options">
-                            <button class="quiz-opt-btn" data-choice="deep" onclick="finishQuiz('skin-olive')">
-                                <svg class="opt-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M12 22a7 7 0 0 0 7-7c0-4.3-7-11-7-11S5 10.7 5 15a7 7 0 0 0 7 7z"/>
-                                </svg>
-                                <span class="opt-text">Deep hydration & wrinkle reduction</span>
-                            </button>
-                            <button class="quiz-opt-btn" data-choice="glow" onclick="finishQuiz('skin-almond')">
-                                <svg class="opt-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                    <circle cx="12" cy="12" r="5"/>
-                                    <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
-                                </svg>
-                                <span class="opt-text">Bright tone, fading dark circles & light feel</span>
-                            </button>
-                        </div>
-                    </div>
-                    <!-- Step 2 (Conditional: Respiratory/Stress Focus) -->
-                    <div class="quiz-step" id="step-2-respiratory">
-                        <h4 class="quiz-question">How do you prefer to utilize essential oils?</h4>
-                        <div class="quiz-options">
-                            <button class="quiz-opt-btn" data-choice="inhale" onclick="finishQuiz('respiratory-eucalyptus')">
-                                <svg class="opt-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
-                                    <path d="M12 14c-1.5-1.5-1.5-3.5 0-5 1.5 1.5 1.5 3.5 0 5z"/>
-                                </svg>
-                                <span class="opt-text">Steam inhalation & congestion relief</span>
-                            </button>
-                            <button class="quiz-opt-btn" data-choice="diffuse" onclick="finishQuiz('respiratory-eucalyptus')">
-                                <svg class="opt-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18z"/>
-                                    <path d="M9 12h6M12 9v6"/>
-                                </svg>
-                                <span class="opt-text">Diffusing for stress relief & aromatherapy</span>
-                            </button>
-                        </div>
-                    </div>
-                    <!-- Quiz Result -->
-                    <div class="quiz-step" id="quiz-result">
-                        <div class="result-header">
-                            <span class="result-badge">Your Recommendation</span>
-                            <h4 class="result-product-title" id="recommended-title">Recommended Product</h4>
-                        </div>
-                        <div class="result-body">
-                            <div class="result-img-wrapper" id="recommended-svg-container">
-                                <!-- SVG will be injected here dynamically -->
-                            </div>
-                            <div class="result-details">
-                                <p class="result-desc" id="recommended-desc">Product description goes here.</p>
-                                <div class="result-specs">
-                                    <span class="spec-label">Key Variant:</span>
-                                    <span class="spec-val" id="recommended-variant">Variant details</span>
-                                </div>
-                                <div class="result-actions">
-                                    <button class="btn btn-primary" id="recommended-view-btn" onclick="openRecommendedDetails()">View Details</button>
-                                    <button class="btn btn-outline btn-outline-dark" onclick="restartQuiz()">Retake Quiz</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+
 
         <!-- Product Catalog Section -->
         <section class="catalog-section" id="catalog">
@@ -374,7 +204,7 @@
                 <div class="product-grid" id="product-grid">
                     
                     <!-- Product 1: Vasanta Sri Devi Hair Oil -->
-                    <div class="product-card fade-in-section" data-category="hair" id="prod-1">
+                    <div class="product-card fade-in-section" data-category="hair" id="prod-1" onclick="openProductModal(1)" style="cursor: pointer;">
                         <div class="product-card-badge">Ayurvedic Hair Care</div>
                         <div class="product-img-holder">
                             <img src="products/Vasanta Sri Devi Ayurvedic Hair Oil 200ML Bottle Box.png" alt="Vasanta Sri Devi Ayurvedic Hair Oil" class="product-photo">
@@ -385,13 +215,12 @@
                             <p class="product-card-desc">Nourishing hair treatment supporting scalp vitality and healthy hair growth.</p>
                             <div class="product-card-footer">
                                 <span class="product-card-price">From Rs 120</span>
-                                <button class="btn btn-small" onclick="openProductModal(1)">View Details</button>
                             </div>
                         </div>
                     </div>
 
                     <!-- Product 2: Vasanta Sri Devi Mandara Tailam -->
-                    <div class="product-card fade-in-section" data-category="hair" id="prod-2">
+                    <div class="product-card fade-in-section" data-category="hair" id="prod-2" onclick="openProductModal(2)" style="cursor: pointer;">
                         <div class="product-card-badge">Ayurvedic Hair Care</div>
                         <div class="product-img-holder">
                             <img src="products/Vasanta Sri Devi Mandara Tailam 200ML Bottle Box.png" alt="Vasanta Sri Devi Mandara Tailam" class="product-photo">
@@ -402,13 +231,12 @@
                             <p class="product-card-desc">Traditional herbal oil with Mandara (Hibiscus) to nourish and revitalize damaged hair.</p>
                             <div class="product-card-footer">
                                 <span class="product-card-price">From Rs 150</span>
-                                <button class="btn btn-small" onclick="openProductModal(2)">View Details</button>
                             </div>
                         </div>
                     </div>
 
                     <!-- Product 3: B FIT Muscle Oil -->
-                    <div class="product-card fade-in-section" data-category="wellness" id="prod-3">
+                    <div class="product-card fade-in-section" data-category="wellness" id="prod-3" onclick="openProductModal(3)" style="cursor: pointer;">
                         <div class="product-card-badge">Therapeutic Relief</div>
                         <div class="product-img-holder">
                             <img src="products/B FIT Muscle Oil 100ML Bottle Box.png" alt="B FIT Muscle Oil" class="product-photo">
@@ -419,13 +247,12 @@
                             <p class="product-card-desc">Ayurvedic formulation to support muscle recovery, flexibility, and rapid joint pain relief.</p>
                             <div class="product-card-footer">
                                 <span class="product-card-price">From Rs 85</span>
-                                <button class="btn btn-small" onclick="openProductModal(3)">View Details</button>
                             </div>
                         </div>
                     </div>
 
                     <!-- Product 4: River Hills Olive Oil -->
-                    <div class="product-card fade-in-section" data-category="skin" id="prod-4">
+                    <div class="product-card fade-in-section" data-category="skin" id="prod-4" onclick="openProductModal(4)" style="cursor: pointer;">
                         <div class="product-card-badge">Cold Pressed Pure</div>
                         <div class="product-img-holder">
                             <img src="products/Olive Oil 200ML Bottle Box.png" alt="River Hills Olive Oil" class="product-photo">
@@ -436,13 +263,12 @@
                             <p class="product-card-desc">100% natural, cold-pressed oil rich in antioxidants to deeply moisturize skin and condition hair.</p>
                             <div class="product-card-footer">
                                 <span class="product-card-price">From Rs 90</span>
-                                <button class="btn btn-small" onclick="openProductModal(4)">View Details</button>
                             </div>
                         </div>
                     </div>
 
                     <!-- Product 5: River Hills Eucalyptus Oil -->
-                    <div class="product-card fade-in-section" data-category="essential" id="prod-5">
+                    <div class="product-card fade-in-section" data-category="essential" id="prod-5" onclick="openProductModal(5)" style="cursor: pointer;">
                         <div class="product-card-badge">Essential Oil</div>
                         <div class="product-img-holder">
                             <img src="products/Eucalyptus Oil 100ML Bottle Box.png" alt="River Hills Eucalyptus Oil" class="product-photo">
@@ -453,13 +279,12 @@
                             <p class="product-card-desc">Essential oil known for clearing nasal passages, soothing muscle pain, and aromatherapy.</p>
                             <div class="product-card-footer">
                                 <span class="product-card-price">From Rs 80</span>
-                                <button class="btn btn-small" onclick="openProductModal(5)">View Details</button>
                             </div>
                         </div>
                     </div>
 
                     <!-- Product 6: River Hills Almond Oil -->
-                    <div class="product-card fade-in-section" data-category="skin" id="prod-6">
+                    <div class="product-card fade-in-section" data-category="skin" id="prod-6" onclick="openProductModal(6)" style="cursor: pointer;">
                         <div class="product-card-badge">Cold Pressed Pure</div>
                         <div class="product-img-holder">
                             <img src="products/Almond Oil 100ML Bottle Box.png" alt="River Hills Almond Oil" class="product-photo">
@@ -470,13 +295,12 @@
                             <p class="product-card-desc">Sweet Almond Oil packed with Vitamin E to deeply moisturize skin and improve dark circles.</p>
                             <div class="product-card-footer">
                                 <span class="product-card-price">From Rs 80</span>
-                                <button class="btn btn-small" onclick="openProductModal(6)">View Details</button>
                             </div>
                         </div>
                     </div>
 
                     <!-- Product 7: Bhringraj Amla Ayurvedic Hair Oil -->
-                    <div class="product-card fade-in-section" data-category="hair" id="prod-7">
+                    <div class="product-card fade-in-section" data-category="hair" id="prod-7" onclick="openProductModal(7)" style="cursor: pointer;">
                         <div class="product-card-badge">Ayurvedic Hair Care</div>
                         <div class="product-img-holder">
                             <img src="products/Bhringraj Amla Ayurvedic Hair Oil 100ML Bottle Box.png" alt="Bhringraj Amla Ayurvedic Hair Oil" class="product-photo">
@@ -487,7 +311,6 @@
                             <p class="product-card-desc">Traditional formula to nourish roots, reduce hair fall, darken hair, and support scalp health.</p>
                             <div class="product-card-footer">
                                 <span class="product-card-price">From Rs 150</span>
-                                <button class="btn btn-small" onclick="openProductModal(7)">View Details</button>
                             </div>
                         </div>
                     </div>
